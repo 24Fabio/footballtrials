@@ -13,6 +13,12 @@ body {
   color: #333;
 }
 
+#carouselExampleIndicators1 img {
+	width: 100%;
+	height: auto;
+	
+}
+
 /* Header Styles */
 header {
   background: url(https://thepfsa.co.uk/wp-content/uploads/2018/12/IMG_2652-1024x683.jpg) no-repeat center center/cover;
