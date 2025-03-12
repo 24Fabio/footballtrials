@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathway Trials - Build Your Football Future</title>
+  <!--Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="css/styles.css" rel="stylesheet">
+			</head>
+<body>
+  <!-- Header -->
+  <!-- Navigation -->
+  	<nav>
+	<li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="trials.html">Trials</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="successstories.html">Success Stories</a> </li>
+		<li class="nav-item"> <a class="nav-link" href="services.html">Services</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="contact.html">Register</a> </li>
+	</nav>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Remember</h2>
+    <p>We are dedicated to helping aspiring footballers achieve their dreams by connecting them to the best soccer trials across the globe. Our mission is to create opportunities for players to showcase their talent and kickstart their careers.</p>
+  </section>
+  <!-- Registration Section -->
+  <section id="registration">
+    <h2>Register Now!</h2>
+    <form id="registrationForm" action="upload.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" class="form-control" min="10" max="100" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" class="form-control" required>
+          <option value="">Select your country</option>
+          <option value="US">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="FR">France</option>
+          <option value="DE">Germany</option>
+		  <option value="ESP">Spain</option>
+		  <option value="PT">Portugal</option>
+		  <option value="IE">Ireland</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          I agree to the <a href="#">terms and conditions</a>.
+        </label>
+      </div>
+<div class="form-group">
+  <label for="fileUpload">Attach Your Video or CV:</label>
+  <input type="file" id="fileUpload" name="fileUpload[]" class="form-control" accept=".pdf,.doc,.docx,.mp4,.avi" multiple required>
+  <small class="form-text text-muted">Accepted formats: PDF, DOC, DOCX, MP4, AVI.</small>
+</div>
+
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pathway Trials. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Simple validation for password match
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match. Please try again.');
+        return;
+      }
+
+      alert('Registration successful!');
+      // Submit form logic can be implemented here (e.g., AJAX request)
+    });
+  </script>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+</html>
