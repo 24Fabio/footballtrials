@@ -1,0 +1,684 @@
+@charset "utf-8";
+/* CSS Document */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background: url(https://thepfsa.co.uk/wp-content/uploads/2018/12/IMG_2652-1024x683.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header a:hover {
+  background: #0056b3;
+}
+/* Header Styles #2 */
+header2 {
+  background: url(https://images.mlssoccer.com/image/private/t_keep-aspect-ratio-e-mobile/f_auto/mls-lafc-prd/sofdekmv6mtv0gpdlhsy.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header2 h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header2 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header2 a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header2 a:hover {
+  background: #0056b3;
+}
+/* Header Styles #3 */
+header3 {
+  background: url(https://www.tfauae.com/wp-content/uploads/elementor/thumbs/JOIN-OUR-TEAM-min-1-scaled-qx841xha4fx44kx70a37jtpv5sfsccvysnli1zzz3k.jpeg) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header3 h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header3 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header3 a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header3 a:hover {
+  background: #0056b3;
+}
+
+/* Header Styles #4 */
+header4 {
+  background: url(https://www.thefa.com/-/media/cfa/middlesexfa/images/news/news---football-services-admin.ashx) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header4 h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header4 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header4 a {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+header4 a:hover {
+  background: #0056b3;
+}
+/* Navigation */
+nav {
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background: #007BFF;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+}
+
+section:nth-of-type(even) {
+  background: #f4f4f4;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Trials Section */
+#trials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#trials .trial-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#trials .card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#trials .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#trials .card p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* Trials Section Part 2 */
+#trialsV2 h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#trialsV2 .trial-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#trialsV2 .card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#trialsV2 .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#trialsV2 .card p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* Trials Section Part 3 */
+#trialsV3 h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#trialsV3 .trial-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#trialsV3 .card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#trialsV3 .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#trialsV3 .card p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  margin: 0;
+}
+
+/* Contact Section */
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact form button {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#contact form button:hover {
+  background: #0056b3;
+}
+
+/* Testimonials */
+#testimonials {
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#testimonials .testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+  color: #555;
+}
+
+#testimonials .testimonial span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #268AD3;
+}
+
+/* Trials Section V4 */
+#trialsV4 h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#trialsV4 .trial-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#trialsV4 .card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#trialsV4 .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#trialsV4 .card p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styling */
+#registration {
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+#registration h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Form Styling */
+#registrationForm .form-group {
+  margin-bottom: 20px;
+}
+
+#registrationForm label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#registrationForm input,
+#registrationForm select,
+#registrationForm textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#registrationForm input:focus,
+#registrationForm select:focus,
+#registrationForm textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Checkbox and Terms */
+#registrationForm #terms {
+  margin-right: 8px;
+}
+
+#registrationForm a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#registrationForm a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+#registrationForm .btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+#registrationForm .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/*Styling Of Table*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.table-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.custom-table thead {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #eaf2f8;
+}
+
+.custom-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .custom-table {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* General form styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group layout */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields styling */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Focus state for inputs */
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+}
+
+/* File input styling */
+#fileUpload {
+  border: 1px dashed #ced4da;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+#fileUpload:hover {
+  border-color: #007bff;
+  background-color: #e9ecef;
+}
+
+/* Small text below file input */
+.form-text {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Submit button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
